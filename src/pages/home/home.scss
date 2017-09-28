@@ -1,3 +1,59 @@
-page-home {
+body {
+    margin: 0;
+}
 
+form {
+    margin: 0;
+}
+
+.workaround {
+    font-family: flappy;
+    visibility: hidden;
+    position: fixed;
+}
+
+@font-face {
+    font-family: "flappy";
+    src: url("./assets/fonts/04b_19.woff") format('woff');
+}
+
+.form-container {
+    position: absolute;
+    width: 100%;
+}
+
+.text-muted-grey {
+    color: #373a3c !important;
+}
+
+#chat-form {
+    width: 100%;
+}
+
+#chat-input {
+    padding: 6px;
+    border: 3px solid #543847;
+    width: 100%;
+    color: #543847;
+}
+
+*:focus {
+    outline: none;
+}
+
+#chat-box {
+    position: fixed;
+    left: calc(50% - 15vw);
+    bottom: 30px;
+    width: 30vw;
+    display: none;
+}
+
+#messages-box {
+    padding: 9px;
+    max-height: 147px;
+    width: 100%;
+    overflow-y: hidden;
+    font-size: 0.7em;
+    line-height: 0;
 }
